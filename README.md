@@ -59,20 +59,20 @@ You can use this project as a template to create your own portfolio. Feel free t
 ```plaintext
 ├── Level A/
 │   └── assets/      
-│       ├── csss/    # CSS files
-│       ├── img/    # Images and icons
-│       ├── js/     # JavaScript files
-│   └── index.html  # Main HTML file
+│   |    ├── csss/    # CSS files
+│   |    ├── img/     # Images and icons
+│   |    └── js/      # JavaScript files
+│   └── index.html    # Main HTML file
 │  
 ├── Level B/
 │   └── assets/      
-│       ├── csss/    # CSS files
-│       ├── img/    # Images and icons
-│       ├── js/     # JavaScript files
-│   └── index.html  # Main HTML file
+│   |    ├── csss/    # CSS files
+│   |    ├── img/     # Images and icons
+│   |    ├── js/      # JavaScript files
+│   └── index.html    # Main HTML file
 │
-├── LICENSE          # License file
-└── README.md        # Project README file
+├── LICENSE           # License file
+└── README.md         # Project README file
 ```
 
 ## Deployment
