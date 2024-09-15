@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assetes/csss/style.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -412,11 +414,18 @@
               />
               <textarea
                 name="message"
+                id="message"
                 class="form-input"
                 placeholder="Your Message"
                 required
+                oninput="checkMessage()"
               ></textarea>
             </div>
+            <div
+              class="g-recaptcha hidden"
+              id="recaptchaContainer"
+              data-sitekey="6Lcf_zIqAAAAAK4opU_tzaphNx9ufUNlkHaJlMCd"
+            ></div>
             <input
               type="checkbox"
               name="botcheck"
@@ -427,9 +436,6 @@
               <span>Send Message</span>
             </button>
           </form>
-        </div>
-        <div id="formSuccessMessage" class="hidden">
-          <p>Thank you! Your message has been sent.</p>
         </div>
         <div class="social-icons">
           <a
@@ -453,7 +459,8 @@
         </div>
       </div>
     </section>
-    <!-- Footer Section -->
+
+    <!-------------------------------------------Footer Section---------------------------------------->
     <footer class="contact-footer">
       <p>&copy; 2024 Ponugumatla Bhavish. All rights reserved.</p>
     </footer>
@@ -464,6 +471,7 @@
     <script>
       AOS.init({ offset: 0 });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="./assetes/js/script.js"></script>
   </body>
 </html>
